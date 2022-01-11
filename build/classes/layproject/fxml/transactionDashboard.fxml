@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1440.0" style="-fx-background-color: #90e0ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layproject.controller.TransactionDashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00ff80" height="721.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="240.0" />
+      <Label layoutX="51.0" layoutY="20.0" text="CASHIER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="93.0" prefHeight="60.0" prefWidth="103.0">
+         <children>
+            <Label text="Cashier Id:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="Cashier Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="110.0" layoutY="93.0" prefHeight="60.0" prefWidth="119.0">
+         <children>
+            <Label fx:id="cashierIdLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="cashierNameLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="12.0" layoutY="203.0" text="MEMBERSHIP">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="276.0" prefHeight="172.0" prefWidth="103.0">
+         <children>
+            <Label text="Membership Id:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="First Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="Last Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="Phone No:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="Birth Date:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="Join Date:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefWidth="114.0" text="Points:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="110.0" layoutY="276.0" prefHeight="210.0" prefWidth="119.0">
+         <children>
+            <Label fx:id="membershipIdLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="firstNameLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lastNameLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="phoneNoLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="birthDateLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="joinDateLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="pointsLabel" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="76.0" fitWidth="74.0" layoutX="83.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8_owl_128px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="backBtn" layoutX="82.0" layoutY="687.0" onAction="#backButtonClicked" prefHeight="34.0" prefWidth="77.0" text="BACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="menuTb" layoutX="630.0" layoutY="38.0" onMouseClicked="#menuTableClicked" prefHeight="330.0" prefWidth="800.0">
+         <columns>
+            <TableColumn fx:id="menuId" prefWidth="90.0" text="menu_id" />
+            <TableColumn fx:id="menuName" prefWidth="350.0" text="menu_name" />
+            <TableColumn fx:id="price" prefWidth="100.0" text="price" />
+            <TableColumn fx:id="stock" prefWidth="100.0" text="stock" />
+            <TableColumn fx:id="category" prefWidth="160.0" text="category" />
+         </columns>
+      </TableView>
+      <VBox alignment="CENTER_LEFT" layoutX="245.0" layoutY="118.0" prefHeight="170.0" prefWidth="154.0">
+         <children>
+            <Label text="Menu Id:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Menu Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Price:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Stock:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Qty:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="399.0" layoutY="118.0" prefHeight="170.0" prefWidth="240.0">
+         <children>
+            <Label fx:id="menuIdLabel" prefHeight="17.0" prefWidth="235.0" text="Id">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="menuNameLabel" prefHeight="17.0" prefWidth="235.0" text="Menu Name">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel" prefHeight="17.0" prefWidth="235.0" text="Price">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="stockLabel" prefHeight="17.0" prefWidth="235.0" text="Stock">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="qtyField" maxWidth="40.0" prefWidth="50.0" promptText="Qty" text="0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <JFXTextField fx:id="menuNameSearchField" layoutX="245.0" layoutY="93.0" promptText="Menu Name" />
+      <JFXButton fx:id="searchBtn" layoutX="380.0" layoutY="93.0" onAction="#searchButtonClicked" text="Search" />
+      <JFXButton fx:id="addBtn" layoutX="265.0" layoutY="303.0" onAction="#addButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Add" textFill="WHITE" />
+      <JFXButton fx:id="voidBtn" layoutX="383.0" layoutY="303.0" onAction="#voidButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Void" textFill="WHITE" />
+      <JFXButton fx:id="clearBtn" layoutX="501.0" layoutY="303.0" onAction="#clearButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Clear" textFill="WHITE" />
+      <TextArea fx:id="receipt" layoutX="630.0" layoutY="385.0" prefHeight="302.0" prefWidth="589.0" />
+      <VBox alignment="CENTER_LEFT" layoutX="245.0" layoutY="484.0" prefHeight="104.0" prefWidth="209.0">
+         <children>
+            <Label text="Payment Method:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Cash (ONLY FOR CASH):">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="454.0" layoutY="484.0" prefHeight="104.0" prefWidth="154.0">
+         <children>
+            <JFXComboBox fx:id="paymentComb" prefHeight="25.0" prefWidth="101.0" />
+            <JFXTextField fx:id="cashField" maxWidth="50.0" prefHeight="25.0" prefWidth="50.0" promptText="Cash" text="0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <JFXButton fx:id="checkoutBtn" layoutX="383.0" layoutY="589.0" onAction="#checkoutButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Checkout" textFill="WHITE" />
+      <JFXButton fx:id="finishBtn" layoutX="1278.0" layoutY="506.0" onAction="#finishButtonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #cc1d3a;" text="FINISH" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="receiveLabel" layoutX="360.0" layoutY="645.0" text="Points Received: 0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountField" layoutX="360.0" layoutY="674.0" text="Total Amount: 0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

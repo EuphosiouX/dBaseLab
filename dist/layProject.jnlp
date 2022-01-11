@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="layProject.jnlp">
+  <information>
+    <title>layProject</title>
+    <vendor>Michael Christopher</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="layProject.jar" size="63948" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.25.jar" size="2428320" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="layproject.Main"  name="layProject" />
+  <update check="always"/>
+</jnlp>

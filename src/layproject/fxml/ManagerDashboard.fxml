@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboardManagerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1440.0" style="-fx-background-color: #90e0ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layproject.controller.ManagerDashboardController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="240.0" style="-fx-background-color: #00ff80;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="MANAGER">
+               <font>
+                  <Font name="Roboto Bold" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="65.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton fx:id="menuBtn" onAction="#menuButtonCLicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #fca90d;" text="MENU">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="membershipsBtn" onAction="#membershipsButtonClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #fca90d;" text="MEMBERSHIPS">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="staffBtn" onAction="#staffButtonClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #fca90d;" text="STAFF">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="staffCatBtn" onAction="#staffCatButtonClicked" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #fca90d;" text="STAFF.CAT">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="110.0" />
+               </VBox.margin>
+            </JFXButton>
+            <ImageView fitHeight="76.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_owl_128px.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton fx:id="homeBtn" onAction="#homeBtnClicked" prefHeight="34.0" prefWidth="77.0" text="HOME">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

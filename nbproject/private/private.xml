@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/classes/JDBConnection.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/StaffCatDashboardController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/transactionDashboard.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/classes/FxmlLoader.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/MenuDashboardController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/interfaces/CheckTextField.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/classes/StaffCategory.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/membershipsDashboard.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/ManagerDashboard.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/ManagerDashboardController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/MembershipsDashboardController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/TransactionDashboardController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/Main.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/Login.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/askMembership.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/staffDashboard.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/staffCatDashboard.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/classes/Staff.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/StaffDashboardController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/classes/Memberships.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/AskMembershipController.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/interfaces/ItemQuery.java</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/fxml/menuDashboard.fxml</file>
+            <file>file:/C:/Users/Michael%20Christopher/Desktop/binus%20stuff/SEM%203/Database%20System%20ISYS169001/layProject/src/layproject/controller/LoginController.java</file>
+        </group>
+    </open-files>
+</project-private>

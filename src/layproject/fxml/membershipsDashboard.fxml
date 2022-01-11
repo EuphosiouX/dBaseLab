@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #90e0ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layproject.controller.MembershipsDashboardController">
+   <children>
+      <TableView fx:id="membershipsTb" layoutX="200.0" layoutY="330.0" onMouseClicked="#membershipTableClicked" prefHeight="330.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="membershipsId" prefWidth="100.0" text="membership_id" />
+          <TableColumn fx:id="firstName" prefWidth="150.0" text="first_name" />
+            <TableColumn fx:id="lastName" prefWidth="150.0" text="last_name" />
+            <TableColumn fx:id="phoneNo" prefWidth="150.0" text="phone_no" />
+            <TableColumn fx:id="birthDate" prefWidth="100.0" text="birth_date" />
+            <TableColumn fx:id="joinDate" prefWidth="100.0" text="join_date" />
+            <TableColumn fx:id="points" prefWidth="50.0" text="points" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #d9d9d9;">
+         <children>
+            <Label text="MEMBERSHIPS">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="660.0" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #d9d9d9;" />
+      <VBox alignment="CENTER_LEFT" layoutX="200.0" layoutY="60.0" prefHeight="270.0" prefWidth="165.0">
+         <children>
+            <Label text="Membership Id:">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="First Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Last Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Phone No:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Birth Date:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Points:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="365.0" layoutY="60.0" prefHeight="270.0" prefWidth="235.0">
+         <children>
+            <Label fx:id="membershipIdLabel" prefWidth="235.0" text="Id">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="firstNameField" promptText="First Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="lastNameField" promptText="Last Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="phoneNoField" promptText="Phone No">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXDatePicker fx:id="birthDatePick" prefWidth="235.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXDatePicker>
+            <JFXTextField fx:id="pointsField" promptText="Points" text="0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="600.0" layoutY="60.0" prefHeight="60.0" prefWidth="400.0">
+         <children>
+            <Label prefHeight="55.0" prefWidth="57.0" text="Search:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="700.0" layoutY="120.0" prefHeight="27.0" prefWidth="200.0">
+         <children>
+            <JFXTextField fx:id="phoneNoSearchField" promptText="Phone No" />
+            <JFXButton fx:id="searchBtn" onAction="#searchButtonClicked" text="Search" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="600.0" layoutY="147.0" prefHeight="183.0" prefWidth="400.0">
+         <children>
+            <JFXButton fx:id="addBtn" onAction="#addButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Add" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="updateBtn" onAction="#updateButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Update" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="removeBtn" onAction="#removeButtonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Remove" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
