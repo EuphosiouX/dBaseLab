@@ -139,6 +139,8 @@ public class TransactionDashboardController implements Initializable, CheckTextF
     private Label receiveLabel;
     @FXML
     private Label amountField;
+    @FXML
+    private JFXButton historyBtn;
    
     public void getCashier(String id, String name){
         cashierIdLabel.setText(id);
@@ -387,6 +389,11 @@ public class TransactionDashboardController implements Initializable, CheckTextF
                 }
             }
         }   
+    }
+    
+    @FXML
+    private void historyButtonClicked(ActionEvent event) throws IOException {
+        loader.showStage("/layproject/fxml/invoiceOrderDashboard.fxml");
     }
 
     @FXML

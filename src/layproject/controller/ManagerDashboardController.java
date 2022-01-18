@@ -38,6 +38,8 @@ public class ManagerDashboardController implements Initializable {
     private JFXButton staffBtn;
     @FXML
     private JFXButton staffCatBtn;
+    @FXML
+    private JFXButton historyBtn;
 
     /**
      * Initializes the controller class.
@@ -76,5 +78,10 @@ public class ManagerDashboardController implements Initializable {
         stage.close();    
         loader.showStage("/layproject/fxml/Login.fxml");
     }
-    
+
+    @FXML
+    private void historyButtonClicked(ActionEvent event) throws IOException {
+        Pane view = loader.getView("/layproject/fxml/invoiceOrderDashboard2.fxml");    
+        dashboardManagerPane.setCenter(view);
+    } 
 }

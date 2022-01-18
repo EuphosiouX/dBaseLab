@@ -119,6 +119,7 @@ public class AskMembershipController implements Initializable, CheckTextField, I
         showItemList("");
         birthDatePick.setValue(LocalDate.now());
         pointsField.setText("0");
+        idLabel.setText("");
     }    
 
     @FXML
@@ -165,7 +166,7 @@ public class AskMembershipController implements Initializable, CheckTextField, I
 
         TransactionDashboardController controller = ldr.getController();
         
-        if(idLabel.getText() != "Id"){
+        if(!idLabel.getText().isEmpty()){
             controller.getCashier(gid, gname);
             controller.getMember(mid, mfname, mlname, mphoneNo, mbdate, mjdate, mpoints);
         

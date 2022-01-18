@@ -344,5 +344,10 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <JFXButton fx:id="historyBtn" layoutX="1278.0" layoutY="439.0" onAction="#historyButtonClicked" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #fca90d;" text="HISTORY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

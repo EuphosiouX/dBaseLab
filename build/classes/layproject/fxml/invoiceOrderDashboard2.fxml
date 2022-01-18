@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #90e0ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layproject.controller.InvoiceOrderDashboard2Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #d9d9d9;">
+         <children>
+            <Label text="INVOICE AND ORDER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="660.0" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #d9d9d9;" />
+      <HBox alignment="CENTER" layoutX="890.0" layoutY="69.0" prefHeight="27.0" prefWidth="200.0">
+         <children>
+            <JFXTextField fx:id="invoiceIdSearchField" promptText="Invoice Id" />
+            <JFXButton fx:id="searchBtn" onAction="#searchButtonClicked" text="Search" />
+         </children>
+      </HBox>
+      <TableView fx:id="orderTb" layoutX="14.0" layoutY="400.0" onMouseClicked="#orderTableClicked" prefHeight="250.0" prefWidth="800.0">
+         <columns>
+            <TableColumn fx:id="orderId" prefWidth="120.0" text="order_id" />
+            <TableColumn fx:id="menuId" prefWidth="120.0" text="menu_id" />
+            <TableColumn fx:id="price" prefWidth="120.0" text="price" />
+            <TableColumn fx:id="quantity" prefWidth="120.0" text="quantity" />
+            <TableColumn fx:id="total" prefWidth="200.0" text="total" />
+            <TableColumn fx:id="orderInvoiceId" prefWidth="120.0" text="invoice_id" />
+         </columns>
+      </TableView>
+      <TableView fx:id="invoiceTb" layoutX="14.0" layoutY="100.0" onMouseClicked="#invoiceTableClicked" prefHeight="250.0" prefWidth="800.0">
+         <columns>
+            <TableColumn fx:id="invoiceId" prefWidth="120.0" text="invoice_id" />
+            <TableColumn fx:id="transactionDate" prefWidth="120.0" text="transaction_date" />
+            <TableColumn fx:id="paymentMethod" prefWidth="120.0" text="payment_method" />
+            <TableColumn fx:id="invoicePrice" prefWidth="200.0" text="price" />
+            <TableColumn fx:id="staffId" prefWidth="120.0" text="staff_id" />
+            <TableColumn fx:id="membershipId" prefWidth="120.0" text="membership_id" />
+         </columns>
+      </TableView>
+      <VBox alignment="CENTER_LEFT" layoutX="825.0" layoutY="100.0" prefHeight="250.0" prefWidth="165.0">
+         <children>
+            <Label text="Cashier Id:">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Cashier Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="60.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Membership Id:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Membership Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="990.0" layoutY="100.0" prefHeight="250.0" prefWidth="165.0">
+         <children>
+            <Label fx:id="cashierIdLabel" text="-">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cashierNameLabel" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="60.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="membershipIdLabel" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="membershipNameLabel" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="825.0" layoutY="479.0" prefHeight="93.0" prefWidth="165.0">
+         <children>
+            <Label text="Menu Id:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Menu Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="990.0" layoutY="479.0" prefHeight="93.0" prefWidth="165.0">
+         <children>
+            <Label fx:id="menuIdLabel" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="menuNameLabel" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <JFXButton fx:id="resetBtn" layoutX="941.0" layoutY="593.0" onAction="#resetbuttonClicked" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #002480;" text="Reset" textFill="WHITE" />
+      <Label layoutX="366.0" layoutY="65.0" text="INVOICE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="365.0" text="ORDER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

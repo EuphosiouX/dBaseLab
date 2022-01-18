@@ -193,7 +193,7 @@ public class StaffDashboardController implements Initializable, CheckTextField, 
         query = "SELECT staff.*\n" +
                 "FROM staff\n" +
                 "INNER JOIN staffcategory ON staff.staff_category_id = staffcategory.staff_category_id" +
-                "WHERE staffcategory.category_name = \"Cashier\"\n";
+                " WHERE staffcategory.category_name != 'Manager'";
         rs = dbLink.queryResult(query);
         
         try{

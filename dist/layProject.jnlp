@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="layProject.jar" size="63948" download="eager" />
+    <jar href="layProject.jar" size="76056" download="eager" />
     <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
     <jar href="lib\mysql-connector-java-8.0.25.jar" size="2428320" download="eager" />
   </resources>
